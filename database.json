@@ -1,0 +1,24 @@
+[{
+    "title": "celular",
+    "description": "Lorem Ipsum",
+    "price": 1000,
+    "thumbnail": "thumbnail",
+    "code": "abc123",
+    "stock": 10
+},
+{
+    "title": "computadora",
+    "description": "Lorem Ipsum",
+    "price": 5000,
+    "thumbnail": "thumbnail",
+    "code": "abc124",
+    "stock": 10
+},
+{
+    "title": "tablet",
+    "description": "Lorem Ipsum",
+    "price": 3000,
+    "thumbnail": "thumbnail",
+    "code": "abc125",
+    "stock": 10
+}]
