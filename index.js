@@ -114,6 +114,10 @@ nuevoProducto.addProduct(product3);
 
 console.log(nuevoProducto.getProducts())
 
+console.log(nuevoProducto.getProductsById(2))
+console.log(nuevoProducto.getProductsById(4))
+
+
 // console.log(nuevoProducto.deleteProduct(2))
 // console.log(nuevoProducto.deleteProduct(4))
 
