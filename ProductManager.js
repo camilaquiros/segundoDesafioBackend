@@ -23,7 +23,7 @@ class ProductManager {
         const database = this.cargaDelArchivo();
         if (database.find((p) => p.code == product.code)){ 
             console.log(`Producto ${product.title} ya existente`);
-        } else{
+        } else {
             product.id = database.length + 1;
             database.push(product);
             fs.writeFileSync(this.path, JSON.stringify(database))
@@ -65,7 +65,7 @@ class ProductManager {
     }
 }
 
-class Product extends ProductManager {
+class Product {
     contructor(title, description, price, thumbnail, code, stock) {
         this.id = id;
         this.title = title;
@@ -106,21 +106,30 @@ const product3 = {
     stock: 10
 }
 
+//devolver array vacío
 console.log(nuevoProducto.getProducts())
 
 nuevoProducto.addProduct(product1);
 nuevoProducto.addProduct(product2);
 nuevoProducto.addProduct(product3);
 
+//devolver todos los productos
 console.log(nuevoProducto.getProducts())
 
+//devolver producto con ID 2
 console.log(nuevoProducto.getProductsById(2))
+
+//devolver "Producto no encontrado"
 console.log(nuevoProducto.getProductsById(4))
 
-
+//borrar producto con ID 2
 // console.log(nuevoProducto.deleteProduct(2))
+
+//devolver "Producto no encontrado"
 // console.log(nuevoProducto.deleteProduct(4))
 
+
+//actualizar producto
 // console.log(nuevoProducto.updateProduct(1,  
 // {
 // title: 'celular',    
